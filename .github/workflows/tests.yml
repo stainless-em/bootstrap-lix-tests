@@ -1,0 +1,11 @@
+name: Tests
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: stainless-em/bootstrap-lix@main
+      - run: nix --version 2>&1 | grep "Lix, like Nix"
