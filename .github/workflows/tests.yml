@@ -3,9 +3,9 @@ on:
   push:
     branches: [ "main" ]
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: stainless-em/bootstrap-lix@8de593544c15ff9921f140e91d0336c7007b987b
+      - uses: stainless-em/bootstrap-lix@69ce9b8d466ddc0332a57aab813babef4268341b
       - run: nix --version 2>&1 | grep "Lix, like Nix"
