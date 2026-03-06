@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: stainless-em/bootstrap-lix@1afe860efdf9e0e3356702acb0f5d48f9a0cb122
+      - uses: stainless-em/bootstrap-lix@168bf411886966879dd3106ee48902c6bac38cb1
       - run: nix --version 2>&1 | grep "Lix, like Nix"
